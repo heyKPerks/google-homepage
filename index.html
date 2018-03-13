@@ -4,39 +4,51 @@
   <head>
     <title>Google</title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
-    <div id="header">
-      <ul id="main_nav">
-        <li id="gmail"><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
-        <li id="images"><a href="https://www.google.bg/imghp?hl=en&tab=wi">Images</a></li>
-        <li ><a href="https://www.google.bg/intl/en/options/" class="google-apps" title="Google Apps">Google Apps</a></li>
-        <li id="account"><a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fintro&followup=https%3A%2F%2Fmyaccount.google.com%2Fintro&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign In</a></li>
-      </ul><!--main_nav-->
-    </div><!--header-->
+    <div id="nav">
+      <div class="left_links"> 
+        <ul aria-label="information">
+          <li><a href="">About</a></li>
+          <li><a href="">Store</a></li>
+        </ul>
+      </div><!--left_links"-->
+      <div class="right_links">
+        <ul aria-label="account">
+          <li id="gmail"><a href="">Gmail</a></li>
+          <li id="images"><a href="">Images</a></li>
+          <li><a href="" id="grid" title="Google apps"><img src="images/white.png"></a></li>
+          <li><a href="" id="sign-in">Sign in</a></li>
+        </ul>
+      </div><!--right_links-->
+    </div><!--nav-->
     <div id="main">
-      <div id="logo">
-        <img alt="Google" id="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="92" width="272">
-      </div><!--logo-->
-      <div id="form_container">
-        <form>
-          <!--search_input-->
-          <div id="search_cointer">
-            <input id="search_input" type="text">
-          </div>
-          <div id="button_container">
-            <!--google_search_btn-->
-            <input value="I'm Feeling Lucky" aria-label="Google Search" id="google_search_btn" na  me="btn1" type="submit">
-            <!--feeling_lucky_btn-->
-            <input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="feeling_lucky_btn" name="btn2" type="submit">
-          </div><!--button_container-->
-        </form>
-      </div><!--form_container-->
+      <img src="images/googlelogo_color_272x92dp.png" id="logo">
+      <div id="search-field">
+        <label for="search"><span class="screen-reader">Enter search term or URL</span></label>
+        <input type="search" name="search" id="search" title="Search" placeholder="Search Google or Type URL">
+      </div><!--search-field"-->
+      <div class="buttons">
+        <a href="">Google Search</a>
+        <a href="">I'm Feeling Lucky</a>
+      </div><!--buttons-->
     </div><!--main-->
     <div id="footer">
-      <!--right_nav-->
-      <!--left_nav-->
+      <div class="left_links">
+        <ul aria-label="business">
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Business</a></li>
+        </ul>
+      </div><!--left_links-->
+      <div class="right_links">
+        <ul aria-label="terms and conditions">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </div><!--left_links-->
     </div><!--footer-->
   </body>
 </html>
